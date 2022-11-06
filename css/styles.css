@@ -93,7 +93,7 @@ img {
 
 /*-- Шапка сторінки -*/
 .header {
-  background: var(--background-color);
+  background-color: var(--background-color);
   border-bottom: 1px solid #ececec;
 }
 
@@ -177,6 +177,9 @@ img {
   color: var(--gray-color);
 }
 
+.contact-link::before {
+}
+
 .contact-link:hover,
 .contact-link:focus {
   color: var(--blue-color);
@@ -216,10 +219,21 @@ img {
   );
 }
 
+.header-background {
+}
+
 .hero {
   background: var(--background-footer);
+  background-image: url(../images/back-ground-photo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-title {
@@ -263,7 +277,14 @@ img {
   width: 1170px;
 }
 
-.section-features-item {
+.section-features-item::before {
+  display: block;
+  content: "";
+
+  height: 120px;
+  outline: 1px solid red;
+  background-image: url(../images/icons.svg#icon-antenna);
+  background-size: contain;
 }
 .section-features-list-titel {
   font-size: 14px;
@@ -417,7 +438,7 @@ img {
 .section-portfolio-filter-list {
   display: inline-flex;
   align-self: center;
-  gap: var(--indent);
+  gap: var(--indent-8);
 }
 
 .section-portfolio-filter-btn {
@@ -475,4 +496,10 @@ img {
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: var(--gray-color);
+}
+
+.foter-link-box {
+}
+
+.footer-link-title {
 }
