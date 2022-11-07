@@ -291,13 +291,12 @@ img {
   border-radius: 4px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .advantage-list-icon {
   outline: 1px solid red;
   background-position: center;
-  margin-top: 25px;
-  margin-bottom: 25px;
 }
 
 .icon {
