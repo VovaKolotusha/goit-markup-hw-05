@@ -295,8 +295,6 @@ img {
 
 .advantage-list-icon {
   outline: 1px solid red;
-  background-image: url(../images/icons.svg#icon-antenna);
-
   background-position: center;
 }
 
