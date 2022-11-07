@@ -220,18 +220,25 @@ img {
 }
 
 .header-background {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/overlay.png);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero {
   background: var(--background-footer);
+
   background-image: url(../images/back-ground-photo.jpg);
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 1600px;
   height: 600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -277,14 +284,26 @@ img {
   width: 1170px;
 }
 
-.section-features-item::before {
-  display: block;
-  content: "";
-
+.advantage-icon-block {
+  width: 270px;
   height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+}
+
+.advantage-list-icon {
   outline: 1px solid red;
   background-image: url(../images/icons.svg#icon-antenna);
-  background-size: contain;
+
+  background-position: center;
+}
+
+.icon {
+}
+
+.section-features-item {
 }
 .section-features-list-titel {
   font-size: 14px;
