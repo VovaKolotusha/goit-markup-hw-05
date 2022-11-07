@@ -296,6 +296,8 @@ img {
 .advantage-list-icon {
   outline: 1px solid red;
   background-position: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .icon {
