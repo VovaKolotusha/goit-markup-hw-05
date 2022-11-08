@@ -193,9 +193,14 @@ img {
 }
 
 .contact-list-icon {
-  color: var(--gray-color);
+  fill: var(--gray-color);
   margin-right: 10px;
 }
+.contact-item:hover .contact-list-icon,
+.contact-item:focus .contact-list-icon {
+  fill: rgba(33, 150, 243, 1);
+}
+
 /*-- Головна Сторінки--*/
 
 /*-- Шапка --*/
@@ -393,7 +398,7 @@ img {
 }
 
 .socials {
-  outline: 1px solid blue;
+  /*--outline: 1px solid blue;--*/
   background-position: center;
   display: flex;
   flex-direction: row;
@@ -406,12 +411,10 @@ img {
 }
 
 .socials-item {
-  outline: 1px solid red;
   background-position: center;
 }
 
 .socials-link {
-  outline: 1px solid green;
   padding: 12px;
 }
 .our-team-list-icon {
@@ -427,6 +430,7 @@ img {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  fill: rgba(175, 177, 184, 1);
 }
 
 .icon.with-bg {
@@ -469,8 +473,18 @@ img {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-
+.section-our-clients-item:hover,
+:focus {
+  border: 1px solid rgba(33, 150, 243, 1);
+  border-radius: 4px;
+}
 .advantage-clients-list-icon {
+  fill: rgba(175, 177, 184, 1);
+}
+
+.section-our-clients-item:hover .advantage-clients-list-icon,
+.section-our-clients-item:focus .advantage-clients-list-icon {
+  fill: rgba(33, 150, 243, 1);
 }
 /*-- Підвал сторінки --*/
 .footer {
@@ -533,6 +547,9 @@ img {
   color: var(--blue-color);
 }
 
+.footer-logo-box > .footer-link-box {
+  margin-left: 15px;
+}
 /*-- Портфоліо --*/
 .portfolio {
 }
