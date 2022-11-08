@@ -385,7 +385,6 @@ img {
 }
 
 .section-our-team-position {
-  margin-bottom: 30px;
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
@@ -394,19 +393,55 @@ img {
 }
 
 .socials {
+  outline: 1px solid blue;
   background-position: center;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: baseline;
+  margin-top: 16px;
+  margin-bottom: 30px;
+  margin-left: 32px;
+  margin-right: 32px;
 }
 
 .socials-item {
+  outline: 1px solid red;
   background-position: center;
 }
 
 .socials-link {
+  outline: 1px solid green;
+  padding: 12px;
+}
+.our-team-list-icon {
+  width: 20px;
+  height: 20px;
 }
 
+.icon {
+  display: inline-flex;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon.with-bg {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.icon.with-bg:hover,
+:focus {
+  background-color: var(--blue-color);
+}
+
+.socials-link:hover .our-team-list-icon,
+.socials-link:focus .our-team-list-icon {
+  fill: #eeeeee;
+}
 /*-- Наші клієнти --*/
 
 .section-our-clients {
