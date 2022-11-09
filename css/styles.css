@@ -13,6 +13,7 @@ body {
   --background-color: #ffffff;
   --background-footer: #2f303a;
   --border-color: #eeeeee;
+  --icon-gray: #afb1b8;
   --items: 3;
   --items-4: 4;
   --items-5: 5;
@@ -421,7 +422,7 @@ img {
   padding: 12px;
 }
 .our-team-list-icon {
-  fill: rgba(175, 177, 184, 1);
+  fill: var(--icon-gray);
   width: 20px;
   height: 20px;
 }
@@ -434,7 +435,7 @@ img {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  fill: rgba(175, 177, 184, 1);
+  fill: var(--icon-gray);
 }
 
 .icon.with-bg {
