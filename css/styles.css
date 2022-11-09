@@ -421,6 +421,7 @@ img {
   padding: 12px;
 }
 .our-team-list-icon {
+  fill: rgba(175, 177, 184, 1);
   width: 20px;
   height: 20px;
 }
