@@ -86,7 +86,7 @@ img {
 }
 
 .footer-container {
-  display: block;
+  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -116,6 +116,7 @@ img {
 /*-- Навігація на інші сторінки --*/
 .contact-box {
   margin-left: auto;
+  align-self: center;
 }
 
 .nav-list-box {
@@ -162,12 +163,13 @@ img {
   margin-right: auto;
   display: flex;
   gap: 50px;
+  align-items: baseline;
 }
 
 .contact-item {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: baseline;
 }
 
 .contact-link {
@@ -190,6 +192,7 @@ img {
 }
 
 .contact-icon-block {
+  align-items: baseline;
 }
 
 .contact-list-icon {
@@ -489,6 +492,7 @@ img {
 /*-- Підвал сторінки --*/
 .footer {
   background: var(--background-footer);
+  display: flex;
 }
 
 .footer-logo-box {
@@ -546,9 +550,50 @@ img {
 :focus {
   color: var(--blue-color);
 }
+.footer-link-box {
+  margin-top: 12px;
+}
+.footer-link-title {
+}
+.footer-socials {
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+.list {
+}
+.socials-footer-item {
+}
+.icon-footer {
+  display: inline-flex;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  fill: rgba(175, 177, 184, 1);
+}
+.with-bg-footer {
+}
 
-.footer-logo-box > .footer-link-box {
-  margin-left: 15px;
+.with-bg-footer.icon-footer {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.with-bg-footer.icon-footer:hover,
+:focus {
+  background-color: var(--blue-color);
+}
+.socials-link-foooter {
+  padding: 12px;
+}
+
+.footer-list-icon {
+  fill: var(--background-color);
+  width: 20px;
+  height: 20px;
 }
 /*-- Портфоліо --*/
 .portfolio {
@@ -623,8 +668,28 @@ img {
   color: var(--gray-color);
 }
 
+.footer-box {
+  margin-right: 70px;
+}
 .foter-link-box {
 }
 
 .footer-link-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--background-color);
+  margin-bottom: 20px;
+}
+
+.footer-socials {
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+  gap: 10px;
 }
