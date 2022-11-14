@@ -161,6 +161,12 @@ img {
   color: var(--blue-color);
 }
 
+.nav-link::after {
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: red;
+}
 /*-- Посилання на соцмережі --*/
 
 .contact-list {
@@ -689,6 +695,14 @@ img {
     0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.photo-card::before {
+  display: inline-block;
+  content: "";
+  width: 50%;
+  height: 50%;
+  background-color: orange;
 }
 
 .section-portfolio-item:hover,
