@@ -137,22 +137,38 @@ img {
 }
 
 .studia-open {
+  position: relative;
   color: var(--blue-color);
 }
 .studia-open::after {
-  display: block;
-  border-radius: 10px solid red;
-  border-bottom-color: red;
+  content: "";
+  width: 100%;
+  left: 0;
+  height: 4px;
+  bottom: 0;
+  background: var(--blue-color);
+  border-radius: 2px;
+  position: absolute;
 }
 
 .portfolio-open {
+  position: relative;
   color: var(--blue-color);
+}
+
+.portfolio-open::after {
+  content: "";
+  width: 100%;
+  left: 0;
+  height: 4px;
+  bottom: 0;
+  background: var(--blue-color);
+  border-radius: 2px;
+  position: absolute;
 }
 .nav-item {
 }
 
-.nav-item::after {
-}
 .nav-link {
   display: block;
   padding-top: 33px;
@@ -172,12 +188,6 @@ img {
   color: var(--blue-color);
 }
 
-.nav-link::after {
-  display: block;
-  width: 100%;
-  height: 5px;
-  background-color: green;
-}
 /*-- Посилання на соцмережі --*/
 
 .contact-list {
