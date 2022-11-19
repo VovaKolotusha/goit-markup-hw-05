@@ -14,6 +14,8 @@
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/modal.css">
+  <link rel="stylesheet" href="./modal.js">
 </head>
 
 <body>
@@ -28,7 +30,7 @@
           <li class="nav-item">
             <a href="./index.html" class="nav-link link studia-open">Студія</a>
           </li>
-          <li class="nav-item"> 
+          <li class="nav-item">
             <a href="./portfolio.html" class="nav-link link">Портфоліо</a>
           </li>
           <li class="nav-item">
@@ -64,8 +66,28 @@
     <section class="hero">
       <div class="hero-container header-background">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="hero-btn">Замовити послугу</button>
+        <button data-modal-open type="button" class="hero-btn"
+          >Замовити послугу</button>
       </div>
+      <!-- modal window start -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close class="modal-button">
+          <a
+            class="modal-link link"
+            href="./index.html"
+            target=""
+            rel="noopener noreferrer"
+            aria-label="x modal-icon"
+          >
+            <svg class="modal-list-icon" width="20" height="20">
+              <use href="./images/icons.svg#icon-X"></use>
+            </svg>
+          </a>
+        </button>
+      </div>
+    </div>
+    <!-- modal window end -->
     </section>
     <!-- Особливості -->
     <section class="section-features section">
@@ -141,13 +163,13 @@
           <li class="section-what-we-do-item benefits-item">
             <img src="./images/tehnology-img-1-min.jpg" alt="технології" width="370" />
             <p class="overlay_wwd">
-              Мобільні додатки            
+              Мобільні додатки
             </p>
           </li>
           <li class="section-what-we-do-item benefits-item">
             <img src="./images/tehnology-img-2-min.jpg" alt="технології" width="370" />
             <p class="overlay_wwd">
-              Дизайнерські рішення            
+              Дизайнерські рішення
             </p>
           </li>
         </ul>
@@ -424,6 +446,7 @@
       </ul>
     </div>
   </footer>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
