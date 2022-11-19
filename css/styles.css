@@ -161,6 +161,7 @@ img {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+
   transition-property: var(--blue-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -171,6 +172,12 @@ img {
   color: var(--blue-color);
 }
 
+.nav-link::after {
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: green;
+}
 /*-- Посилання на соцмережі --*/
 
 .contact-list {
